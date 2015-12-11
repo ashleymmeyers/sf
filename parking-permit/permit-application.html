@@ -1,0 +1,196 @@
+<html>
+<head>
+	<title>Apply for a Residential Area Parking Permit</title>
+	<link rel="stylesheet" type="text/css" href="css/parking-permit.css">
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<header>
+	<a href="www.sfmta.com">
+		<img src="https://www.sfmta.com/sites/all/themes/sfmta/img/sfmta-logo.png">
+	</a>
+
+	<ul class="topnav">
+		<li>Getting Around</li>
+		<li>Services</li>
+		<li>Projects & Planning</li>
+		<li>About the SFMTA</li>
+	</ul>
+</header>
+
+
+<ul class="breadcrumb">
+	<li><a>Home  / </a></li>
+	<li><a>Services  /  </a></li>
+	<li><a>Permits & Citations  /  </a></li>
+	<li><a>Parking Permits</a></li>
+</ul>
+
+<h1>Apply for a Residential Area Permit</h1>
+
+
+<div class="bigflex">
+	<div class="main">
+
+		<h2 id="firsth2">First, let's check to see whether your residential address qualifies.</h2>
+
+		<div class="zonecheck">
+			<form>
+					<input type="text" placeholder="Number" id="checknumber">
+					<input type="text" placeholder="Street" id="checkstreet">
+					<input type="text" placeholder="Zip Code" id="checkzip">
+					<button id="checkzone">Check</button>
+			</form>
+		</div>
+
+		<div class="zoneresults">
+			<p class="news">Enter your address above.</p>
+			<div class="nozone" id="zonetag">
+				<span class="yourzone">
+					<span class="letterlabel">
+						<p class="letter">?</p>
+						<p class="zonelabel">ZONE</p>
+					</span>
+					<span class="renews">
+					<p>Renews annually</p>
+					<p id="cleandate">on March 5th</p>
+					</span>
+				</span>
+
+				<p class="fee">Q Zone permits expire annually on March 5, 2016. Because this is in less than 6 months, your annual fee of $111 will be reduced to $55 this year.</p>
+			</div>
+			<div id="nozonefaq" class="hide">
+				Not what you were expecting?
+				<ul>
+					<li><a href="http://sfgov.maps.arcgis.com/apps/OnePane/basicviewer/index.html?appid=5bef0e4bcb6c430eb636101648cefdca" target="blank">Double-check the map.</a></li>
+					<li><a href="http://www.sfmta.com/services/permits-citations/parking-permits/residential-area-permits/request-permit-area-expansion" target="blank">What if I don't live in an existing permit zone?</a></li>
+				</ul>
+			</div>
+		</div>
+
+
+
+		<h2>Before we get started, you'll need:</h2>
+		<ol class="reqs">
+			<li>Your current California DMV registration, in your name and at this permit address.</li>
+			<li>Your current vehicle insurance policy/declaration page, in your name and at this permit address.</li>
+			<li>Visa, MasterCard, or American Express to pay online.</li>
+			<li>To pay any outstanding parking citations. You can <a href="https://wmq.etimspayments.com/pbw/include/sanfrancisco/input.jsp" target="blank">check and pay them here</a>.</li>
+		</ol>
+		<p>
+			If the vehicle you wish to get a permit for is not registered and insured under your name and this address, you may still be eligible for a permit. You will have to fill out a paper application. See the <a href="http://ashleymmeyers.github.io/fewd-36/parking-permit/permit-application.html#special">Special Exceptions section of this page</a> for more details.
+		</p>
+		<p>
+			If you wish to pay by cash or check, please <a href="https://www.sfmta.com/sites/default/files/pdfs/2015/RPP%20online%20app%20Rev%2015%200625.pdf" target="blank">download a printable application form</a>.
+		</p>
+
+
+
+		<h2>Fill out the application below.</h2>
+
+		<form class="application">
+			<span>
+				<input type="text" name="firstName" placeholder="First Name" class="fullwidth" required>
+				<input type="text" name="lastName" placeholder="Last Name" class="fullwidth" required>
+			</span>
+			<span>
+				<input type="email" name="email" placeholder="Email" class="fullwidth" required>
+				<input type="text" name="phone" placeholder="Cell Phone" class="fullwidth" required>
+			</span>
+			<h4>Address</h4>	
+			<span>
+				<input type="text" placeholder="Number" id="appnumber" required>
+				<input type="text" placeholder="Street" id="appstreet" required>
+				<input type="text" placeholder="Zip Code" id="appzip" required>
+			</span>
+			<h4>Vehicle Information</h4>
+			<span>
+				<input type="text" name="make" placeholder="Make" required>
+				<input type="text" name="model" placeholder="Model" required>
+			</span>
+			<span>
+				<input type="text" name="plate" placeholder="License Plate" required>
+				<input type="text" name="year" placeholder="Year" required>
+			</span>
+			<label>
+			<span class"uploadgroup">
+				<section class="uploadbutton">Upload
+   					 <input type="file" class="upload" />
+				</section>
+				<p>California Vehicle Registration</p>
+
+			</span>
+			</label>
+			<label>
+				<span>
+				<section class="uploadbutton">Upload
+					<input type="file" class="upload" />
+				</section>
+				Proof of Insurance
+				</span>
+			</label>
+
+			<h4>Pay the fee for your permit</h4>
+			<p>We'll review your application information and your documents to make sure they meet the requirements, and your card will only be charged if your permit is approved.</p>
+			
+<!-- 			<p class="feetext">$55</p> -->
+			<span>
+				<input type="text" placeholder="Credit Card Number" id="creditcard">
+			</span>
+			<span>
+				<input type="text" placeholder="Expiration Date">
+				<input type="text" placeholder="Security Code">
+			</span>
+			<button>Submit and Pay</button>
+
+		</form>
+		
+
+
+	</div>
+
+	<div class="side">
+		<div class="special">
+
+			<h3 id="special">Special Exceptions</h3>
+
+			<p>If your vehicle is registered elsewhere or insured to another name or address, you may still be eligible. For example, this may be true if you are:</p>
+			<ul>
+				<li>Active military personnel</li>
+				<li>A full-time student at a higher education institution in San Francisco</li>
+				<li>Parking a business-owned vehicle at home</li>
+				<li>A foreign consulate</li>
+				<li>A medical or child caregiver</li>
+			</ul>
+
+			<p>If you have a new or recently purchased vehicle, you can receive a temporary permit until you have proof of registration and insurance.</p>
+			<p>If one of the above applies to you, please <a href="https://www.sfmta.com/services/permits-citations/parking-permits/residential-area-permits/rpp-types">read detailed instructions and download a printable application form here</a>.
+			</p>
+		</div>
+
+		<div class="special">
+
+			<h3>Need Assistance?</h3>
+
+			<ul>
+				<li><a href="https://www.sfmta.com/services/permits-citations/parking-permits/residential-area-permits/rpp-types/permanent-residents" target="blank">Read more about Residential Parking Permits</a></li>
+				<li><a href="tel:311">Call 311</a> for help</li>
+				<li>Bring your documents to the SFMTA Customer Service Center at 11 South Van Ness Avenue, open Monday-Friday from 8:00 a.m. to 5:00 p.m. </li>
+		</div>
+
+	</div>
+
+</div>
+
+	<footer>
+<!-- 		<p>This is a prototype created in December 2015 by Ashley Meyers</p> -->
+	</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+<script src="js/parking-permit.js"></script>
+
+</body>
+</html>

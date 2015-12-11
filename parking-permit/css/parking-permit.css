@@ -1,0 +1,484 @@
+/*//RESET & Main/footer responsiveness setup*/
+/*---------------------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none; /*this removes the bullets in ul lists*/
+	display: flex;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	color: #333333;
+}
+
+.bigflex {
+	display: flex;
+	flex-direction: body;
+	margin-left: 40px;
+}
+
+a {
+	color: #63811E;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+p {
+	margin: 15px 0px; 
+}
+
+h2 {
+	margin: 25 0 10 0;
+	font-weight: 400;
+}
+
+#firsth2 {
+	margin: 0 0 10 0;
+}
+
+
+
+/*HEADER & GENERAL NAV*/
+/*-------------------------------------*/
+header {
+	border-top: 6px solid #538012;
+	background-color: #F5F5F5; 
+	height: 155px;
+	padding: 20 0 0 40;
+	border-bottom: 1px solid lightgray;
+}
+
+.topnav {
+	margin: 15px 0px 20px 0px;
+	font-size: 19px;
+	color: #666;
+}
+
+.topnav li {
+	margin-right: 35px;
+	padding-bottom: 20px;
+
+}
+
+/*Breadcrumb Nav and Headline*/
+/*---------------------------------------*/
+.breadcrumb {
+	padding: 25 0 0 40px;
+
+}
+
+.breadcrumb a {
+	color: #666;
+}
+
+.breadcrumb li {
+	padding-right: 5px;
+
+}
+
+h1 {
+	color: #538012;
+	font-size: 36px;
+	font-weight: bold;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	margin: 20px 0px;
+	padding-left: 40px;
+}
+
+
+/*MAIN
+--------------------------------------*/
+.main {
+	flex-basis: auto;
+	flex-grow: 1;
+	max-width: 675px;
+	line-height: 28px;
+}
+
+
+/*Zone Validation Check
+--------------------------------------*/
+
+.zonecheck form {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#checknumber {
+	width: 70px;
+}
+
+#checkzip {
+	width: 100px;
+}
+
+#checkstreet {
+	flex-grow: 1;
+}
+
+form input {
+	border-radius: 4px;
+	padding: 10px;
+	border: 1px solid #cccccc;
+	font: 14px BlinkMacSystemFont;
+	height: 27px;
+	padding: 4px 6px;
+	line-height: 20px;
+	color: #555555;
+	margin: 5px 5px;
+}
+
+/*form input:focus {
+	outline: none;
+	border-color: rgba(255, 255, 255, 0.7);
+}
+*/
+
+form button {
+	border: none;
+	border-radius: 6px;
+	height: 36px;
+	background-color: #888888;
+	font: bold 14px arial;
+	color: white;
+	padding: 10px;
+	margin: 0px 5px;
+}
+
+form button:hover {
+	background-color: #538012;
+}
+
+/*ZONE RESULTS
+----------------------------*/
+
+.zoneresults {
+	display: flex;
+	margin: auto;
+	border-top: 1px solid lightgray;
+	width: 450px;
+	margin-top: 35px;
+	flex-direction: column;
+}
+
+#zonetag.R {
+	background-color: #E46300;
+}
+
+#zonetag.A {
+	background-color: darkred;
+}
+
+.zoneresults .news {
+	background-color: #F5F5F5;
+	color: #4F5349;
+	padding: 10px;
+	margin: 0;
+	font: bold 24px arial;	
+}
+
+.nozone {
+	display: none;
+}
+
+
+
+.yourzone {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 0px;
+}
+
+
+.zonelabel {
+	font: bold 30px arial;
+	color: white;
+	margin: 0 40 0 40;
+}
+
+.letterlabel {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.letter {
+	font: bold 120px arial;
+	color: white;
+	line-height: 100%;
+	margin: 0 40 0 40;
+}
+
+.renews {
+	color: white;
+	font: bold 22px arial;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 40 0 40;
+}
+
+.renews p {
+	margin: 5px 0px;
+}
+
+.fee {
+	background-color: #F5F5F5;
+	padding: 10px;
+	margin: 0px;
+}
+
+#nozonefaq {
+	background-color: #F5F5F5;
+	padding: 10px;
+	margin: 0px;
+}
+
+#nozonefaq.hide {
+	display: none;
+}
+
+#nozonefaq ul {
+	margin: 0px 35px;
+	display: block;
+	list-style: square;
+}
+
+
+
+/*BEFORE WE START*/
+/*----------------------------------------*/
+.reqs {
+	margin: 0px 35px;
+	display: block;
+	list-style: decimal;
+}
+
+
+
+/*APPLICATION*/
+/*----------------------------------------*/
+h4 {
+	color: #4F5349;
+	font-size: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+	border-top: 1px solid lightgray;
+	margin: 20px 0 5 0;
+	padding: 5 0 0 0;
+
+}
+.application {
+	display: flex;
+	flex-direction: column;
+}
+
+/*HAVING TROUBLE WITH THIS WORKING
+
+.application.submitted input:invalid {
+	border: 1px solid red;
+}*/
+
+.application span {
+	display: flex;
+	align-items: center;
+}
+
+.application span .fullwidth {
+	flex: 1;
+	min-width: 300;
+}
+
+.application span #appnumber {
+	width: 70px;
+}
+
+.application span #appstreet {
+	flex: 1;
+}
+
+.application span #appzip {
+	width: 100px;
+}
+
+.application button {
+	width: 145px;
+	margin: auto;
+	margin-top: 35px;
+}
+
+.application span #fee {
+	display: inline;
+}
+
+.application #creditcard {
+	width: 332;
+}
+
+.uploadgroup {
+	display: flex;
+	justify-content: flex-start;
+
+}
+
+.uploadbutton {
+	border-radius: 6px;
+	height: 36px;
+	font: bold 14px arial;
+	color: white;
+	background-color: #888888;
+    position: relative;
+    width: 60px;
+    padding: 10 7 8 6;
+    margin-right: 25px;
+}
+
+.uploadbutton:hover {
+	background-color: #538012;
+}
+
+.uploadbutton input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+
+
+/*SPECIAL EXCEPTIONS*/
+/*----------------------------------------*/
+
+.special {
+	background-color: #F5F5F5;
+	border-top: 1px solid lightgray;
+	padding: 15px;
+	margin: 0px 40px;
+	width: 300px;
+}
+
+h3 {
+	margin-bottom: 15px;
+	color: #4F5349;
+	font-size: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.special ul {
+	margin: 0px 25px;
+	display: block;
+	list-style: square;
+}
+
+.special li {
+	margin-bottom: 8px;
+}
+
+/*CONFIRMATION*/
+/*-------------------------------------------*/
+.confirm {
+	display: flex;
+	margin: auto;
+	border-top: 1px solid lightgray;
+	width: 450px;
+	margin-top: 35px;
+	flex-direction: column;
+}
+
+.confirm p {
+	background-color: #F5F5F5;
+	color: #4F5349;
+	padding: 10px;
+	margin: 0;
+	font: bold 24px arial;	
+}
+
+.confirm p.fee {
+	font: 16px 'Source Sans Pro', sans-serif;	
+}
+
+
+
+/*FOOTER */
+/*----------------------------------------*/
+footer {
+	background-color: #282b24;
+	height: 150px;
+	border-top: 6px solid #538012;
+	margin: 50 0 0 0;
+}
+
+
+/*RESPONSIVENESS*/
+/*----------------------------------------*/
+@media (max-width: 736px) {
+	.bigflex {
+		flex-direction: column;
+		margin: 0px 22px;
+	}
+
+	.side {
+		width: auto;
+		margin: 35 0 0 0;
+	}
+
+	.special {
+		margin: 0;
+		width: auto;
+	}
+
+	header {
+		height: 118px;
+		padding: 19 0 0 22;
+		border-bottom: 1px solid lightgray;
+	}
+
+	h1 {
+		padding-left: 22px;
+	}
+
+	.topnav {
+		display: none;
+	}
+
+	.breadcrumb {
+		display: none;
+	}
+
+	.zoneresults {
+		width: auto;
+		max-width: 450px;
+		margin: 35px auto;
+	}
+
+	.application span {
+		flex-wrap: wrap;
+	}
+
+	footer {
+		height: 118px;
+		margin: 25 0 0 0;
+		padding: 0;
+		border-top: 6px solid #538012;
+	}
+
+
+}
+

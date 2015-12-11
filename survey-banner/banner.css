@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.survey {
+	background-color: #353535;
+	color: white;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+}
+
+.surveyicon {
+	width: 30px;
+	padding: 4px;
+}
+
+.survey p {
+/*	padding-left: 28px;*/
+}
+
+.survey a {
+	text-decoration: none;
+	color:#008fff;
+	font-weight: bold;
+}
+
+.survey a:hover {
+	color: white;
+}
