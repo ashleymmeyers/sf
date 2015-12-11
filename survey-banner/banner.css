@@ -7,11 +7,10 @@
 
 .survey {
 	background-color: #333;
-	color: white;
 	margin: 0;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
 	padding: 5px;
+	padding-left: 10px;
 	display: flex;
 	align-items: center;
 }
@@ -26,6 +25,10 @@
 
 .survey p {
 	display: inline-block;
+	color: white;
+	margin: 0;
+	font-size: 14px;
+
 }
 
 .survey a {
