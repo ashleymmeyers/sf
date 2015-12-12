@@ -5,7 +5,7 @@
 }
 
 
-.survey {
+.pubexpsurvey {
 	background-color: #333;
 	margin: 0;
 	font-family: 'Open Sans', sans-serif;
@@ -14,14 +14,14 @@
 	align-items: center;
 }
 
-.surveyicon {
+.pubexpsurveyicon {
 	width: 2rem;
 	padding: 5px;
 	margin-right: 7px;
 	display: inline;
 }
 
-.survey p {
+.pubexpsurvey p {
 	display: inline-block;
 	color: white;
 	margin: 0;
@@ -29,12 +29,12 @@
 
 }
 
-.survey a {
+.pubexpsurvey a {
 	text-decoration: none;
 	color:#008fff;
 	font-weight: bold;
 }
 
-.survey a:hover {
+.pubexpsurvey a:hover {
 	color: white;
 }
